@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "blitz dev",
     "build": "blitz build",
+    "prestart": "blitz prisma migrate deploy",
     "start": "blitz start --port ${PORT-3000}",
     "studio": "blitz prisma studio",
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
