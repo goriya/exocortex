@@ -2,6 +2,7 @@
   "name": "exocortex",
   "version": "0.1.0",
   "scripts": {
+    "predev": "blitz prisma migrate dev",
     "dev": "blitz dev",
     "build": "blitz build",
     "prestart": "blitz prisma migrate deploy",
