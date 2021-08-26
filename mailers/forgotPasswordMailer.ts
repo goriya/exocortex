@@ -22,6 +22,8 @@ export function forgotPasswordMailer({ to, token }: ResetPasswordMailer) {
     `,
   }
 
+  console.log("msg", msg)
+
   return {
     async send() {
       if (process.env.NODE_ENV === "production") {
