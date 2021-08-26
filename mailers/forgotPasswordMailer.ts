@@ -1,5 +1,6 @@
 import previewEmail from "preview-email"
 import { sendEmail, Message } from "../integrations/mailjet"
+import { origin } from "utils/env"
 
 type ResetPasswordMailer = {
   to: string
@@ -7,8 +8,6 @@ type ResetPasswordMailer = {
 }
 
 export function forgotPasswordMailer({ to, token }: ResetPasswordMailer) {
-  // In production, set APP_ORIGIN to your production server origin
-  const origin = process.env.APP_ORIGIN || process.env.BLITZ_DEV_SERVER_ORIGIN
   const resetUrl = `${origin}/reset-password?token=${token}`
 
   const msg: Message = {
@@ -25,7 +24,6 @@ export function forgotPasswordMailer({ to, token }: ResetPasswordMailer) {
 
   return {
     async send() {
-      console.log("NODE_ENV", process.env.NODE_ENV)
       if (process.env.NODE_ENV === "production") {
         sendEmail(msg)
       } else {
