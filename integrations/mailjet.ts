@@ -2,7 +2,7 @@ export type Message = {
   from: string
   to: string
   subject: string
-  html: string
+  text: string
 }
 
 export const sendEmail = async (msg: Message) => {
@@ -24,8 +24,7 @@ export const sendEmail = async (msg: Message) => {
           },
         ],
         Subject: msg.subject,
-        TextPart: "",
-        HTMLPart: msg.html,
+        TextPart: msg.text,
       },
     ],
   })
