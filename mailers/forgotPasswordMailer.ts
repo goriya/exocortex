@@ -7,22 +7,17 @@ type ResetPasswordMailer = {
   token: string
 }
 
-export function forgotPasswordMailer({ to, token }: ResetPasswordMailer) {
-  const resetUrl = `${origin}/reset-password?token=${token}`
+const text = (token: string) => `Reset Your Password
 
+https://${origin}/reset-password?token=${token}`
+
+export function forgotPasswordMailer({ to, token }: ResetPasswordMailer) {
   const msg: Message = {
     from: "no-reply@anothernode.com",
     to,
     subject: "Your Password Reset Instructions",
-    html: `
-      <h1>Reset Your Password</h1>
-      <a href="${resetUrl}">
-        Click here to set a new password
-      </a>
-    `,
+    text: text(token),
   }
-
-  console.log("msg", msg)
 
   return {
     async send() {
