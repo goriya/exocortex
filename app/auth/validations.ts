@@ -5,6 +5,7 @@ const password = z.string().min(10).max(100)
 export const Signup = z.object({
   email: z.string().email(),
   password,
+  accessCode: z.string(),
 })
 
 export const Login = z.object({
