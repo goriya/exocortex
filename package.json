@@ -27,12 +27,15 @@
   },
   "dependencies": {
     "@prisma/client": "2.25.0",
+    "autoprefixer": "10",
     "blitz": "0.38.1",
     "final-form": "4.20.2",
+    "postcss": "8",
     "react": "alpha",
     "react-dom": "alpha",
     "react-final-form": "6.5.3",
     "tailwind": "4.0.0",
+    "tailwindcss": "2.1.2",
     "zod": "3.2.0"
   },
   "devDependencies": {
