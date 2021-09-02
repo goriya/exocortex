@@ -51,12 +51,12 @@ const Home: BlitzPage = () => {
               className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white-600 bg-gray-900 hover:bg-gray-100"
             >
               <Link href={Routes.SignupPage()}>
-                <center>
+                <a>
                   {" "}
                   <a className=" text-red-600 p-2 w-32 rounded-full hover:textColor-red-700">
                     <strong>sign up</strong>
                   </a>
-                </center>
+                </a>
               </Link>
             </a>
           </div>
@@ -67,12 +67,12 @@ const Home: BlitzPage = () => {
             >
               <>
                 <Link href={Routes.LoginPage()}>
-                  <center>
+                  <a>
                     {" "}
                     <a className=" text-gray-900 p-2 w-32 rounded-full hover:textColor-red-700">
                       <strong>login</strong>
                     </a>
-                  </center>
+                  </a>
                 </Link>
               </>
             </a>
