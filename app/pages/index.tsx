@@ -54,9 +54,7 @@ const Home: BlitzPage = () => {
                 <center>
                   {" "}
                   <a className=" text-red-600 p-2 w-32 rounded-full hover:textColor-red-700">
-                    <strong>
-                      <center>sign up</center>
-                    </strong>
+                    <strong>sign up</strong>
                   </a>
                 </center>
               </Link>
@@ -72,9 +70,7 @@ const Home: BlitzPage = () => {
                   <center>
                     {" "}
                     <a className=" text-gray-900 p-2 w-32 rounded-full hover:textColor-red-700">
-                      <strong>
-                        <center>login</center>
-                      </strong>
+                      <strong>login</strong>
                     </a>
                   </center>
                 </Link>
