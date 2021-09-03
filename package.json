@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@prisma/client": "2.25.0",
-    "blitz": "0.38.1",
+    "blitz": "0.39.0",
     "final-form": "4.20.2",
     "node-mailjet": "3.3.4",
     "react": "alpha",
