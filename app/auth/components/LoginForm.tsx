@@ -36,14 +36,12 @@ export const LoginForm = (props: LoginFormProps) => {
       >
         <LabeledTextField
           className="block pr-4 mb-1 font-bold text-gray-500 md:text-right md:mb-0"
-          for="inline-password"
           name="email"
           label="Email"
           placeholder="Email"
         />
         <LabeledTextField
           className="block pr-4 mb-1 font-bold text-gray-500 md:text-right md:mb-0"
-          for="inline-password"
           name="password"
           label="Password"
           placeholder="Password"
