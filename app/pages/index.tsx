@@ -32,30 +32,53 @@ const UserInfo = () => {
       </>
     )
   } else {
-    return (
-      <>
-        <Link href={Routes.SignupPage()}>
-          <a className="button small">
-            <strong>Sign Up</strong>
-          </a>
-        </Link>
-        <Link href={Routes.LoginPage()}>
-          <a className="button small">
-            <strong>Login</strong>
-          </a>
-        </Link>
-      </>
-    )
+    return Home
   }
 }
 
 const Home: BlitzPage = () => {
   return (
-    <div>
-      <h1>Hello, world!</h1>
-      <Suspense fallback="Loading">
-        <UserInfo />
-      </Suspense>
+    <div className="bg-blue-900">
+      <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+        <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          <span className="block text-gray-900">Exocortex</span>
+          <span className="block text-red-600">collect your thoughts</span>
+        </h2>
+        <div className="flex mt-8 lg:mt-0 lg:flex-shrink-0">
+          <div className="inline-flex rounded-md shadow">
+            <a
+              href="#"
+              className="inline-flex items-center justify-center px-5 py-3 text-base font-medium bg-red-600 border border-transparent rounded-md text-white-600 hover:bg-gray-100"
+            >
+              <Link href={Routes.SignupPage()}>
+                <a>
+                  {" "}
+                  <a className="w-32 p-2 text-gray-900 rounded-full hover:textColor-red-700">
+                    <strong>sign up</strong>
+                  </a>
+                </a>
+              </Link>
+            </a>
+          </div>
+          <div className="inline-flex ml-3 rounded-md shadow">
+            <a
+              href="#"
+              className="inline-flex items-center justify-center px-5 py-3 text-base font-medium bg-red-600 border border-transparent rounded-md text-white-600 hover:bg-gray-100"
+            >
+              <>
+                <Link href={Routes.LoginPage()}>
+                  <a>
+                    {" "}
+                    <a className="w-32 p-2 text-gray-900 rounded-full hover:textColor-red-700">
+                      <strong>login</strong>
+                    </a>
+                  </a>
+                </Link>
+              </>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

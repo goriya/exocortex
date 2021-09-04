@@ -9,35 +9,39 @@ const ForgotPasswordPage: BlitzPage = () => {
   const [forgotPasswordMutation, { isSuccess }] = useMutation(forgotPassword)
 
   return (
-    <div>
-      <h1>Forgot your password?</h1>
+    <div className="bg-blue-900">
+      <a className="px-10 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+        <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          <span className="block text-gray-900">Forgot your password?</span>
+        </h2>
 
-      {isSuccess ? (
-        <div>
-          <h2>Request Submitted</h2>
-          <p>
-            If your email is in our system, you will receive instructions to reset your password
-            shortly.
-          </p>
-        </div>
-      ) : (
-        <Form
-          submitText="Send Reset Password Instructions"
-          schema={ForgotPassword}
-          initialValues={{ email: "" }}
-          onSubmit={async (values) => {
-            try {
-              await forgotPasswordMutation(values)
-            } catch (error) {
-              return {
-                [FORM_ERROR]: "Sorry, we had an unexpected error. Please try again.",
+        {isSuccess ? (
+          <div>
+            <h2>Request Submitted</h2>
+            <p>
+              If your email is in our system, you will receive instructions to reset your password
+              shortly.
+            </p>
+          </div>
+        ) : (
+          <Form
+            submitText="Send Reset Password Instructions"
+            schema={ForgotPassword}
+            initialValues={{ email: "" }}
+            onSubmit={async (values) => {
+              try {
+                await forgotPasswordMutation(values)
+              } catch (error) {
+                return {
+                  [FORM_ERROR]: "Sorry, we had an unexpected error. Please try again.",
+                }
               }
-            }
-          }}
-        >
-          <LabeledTextField name="email" label="Email" placeholder="Email" />
-        </Form>
-      )}
+            }}
+          >
+            <LabeledTextField name="email" label="Email" placeholder="Email" />
+          </Form>
+        )}
+      </a>
     </div>
   )
 }
