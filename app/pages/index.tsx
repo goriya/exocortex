@@ -38,46 +38,32 @@ const UserInfo = () => {
 
 const Home: BlitzPage = () => {
   return (
-    <div className="bg-blue-900">
-      <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-        <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-          <span className="block text-gray-900">Exocortex</span>
-          <span className="block text-red-600">collect your thoughts</span>
-        </h2>
-        <div className="flex mt-8 lg:mt-0 lg:flex-shrink-0">
-          <div className="inline-flex rounded-md shadow">
-            <a
-              href="#"
-              className="inline-flex items-center justify-center px-5 py-3 text-base font-medium bg-red-600 border border-transparent rounded-md text-white-600 hover:bg-gray-100"
-            >
-              <Link href={Routes.SignupPage()}>
-                <a>
-                  {" "}
-                  <a className="w-32 p-2 text-gray-900 rounded-full hover:textColor-red-700">
-                    <strong>sign up</strong>
-                  </a>
-                </a>
-              </Link>
+    <div className="grid grid-cols-5 bg-gray-500">
+      <div className="col-span-5 col-start-3">
+        <strong>Exocortex</strong>
+      </div>
+      <div className="col-span-5 col-start-3">Store and organize your thoughts</div>
+      <div className="col-span-5 col-start-3">
+        <button className="px-8 py-4 mx-auto my-6 font-bold text-gray-800 transition duration-300 ease-in-out transform bg-white rounded-full shadow-lg lg:mx-0 hover:underline focus:outline-none focus:shadow-outline hover:scale-105">
+          <Link href={Routes.SignupPage()}>
+            <a>
+              {" "}
+              <a className="w-32 p-2 text-gray-900 rounded-full hover:textColor-red-700">
+                <strong>sign up</strong>
+              </a>
             </a>
-          </div>
-          <div className="inline-flex ml-3 rounded-md shadow">
-            <a
-              href="#"
-              className="inline-flex items-center justify-center px-5 py-3 text-base font-medium bg-red-600 border border-transparent rounded-md text-white-600 hover:bg-gray-100"
-            >
-              <>
-                <Link href={Routes.LoginPage()}>
-                  <a>
-                    {" "}
-                    <a className="w-32 p-2 text-gray-900 rounded-full hover:textColor-red-700">
-                      <strong>login</strong>
-                    </a>
-                  </a>
-                </Link>
-              </>
+          </Link>
+        </button>
+        <button className="px-8 py-4 mx-auto my-6 font-bold text-gray-800 transition duration-300 ease-in-out transform bg-white rounded-full shadow-lg lg:mx-0 hover:underline focus:outline-none focus:shadow-outline hover:scale-105">
+          <Link href={Routes.LoginPage()}>
+            <a>
+              {" "}
+              <a className="w-32 p-2 text-gray-900 rounded-full hover:textColor-red-700">
+                <strong>login</strong>
+              </a>
             </a>
-          </div>
-        </div>
+          </Link>
+        </button>
       </div>
     </div>
   )
