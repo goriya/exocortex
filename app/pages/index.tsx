@@ -33,26 +33,32 @@ const UserInfo = () => {
     )
   } else {
     return (
-      <>
+      <a className="grid justify-items-center bg-white-900">
         <Link href={Routes.SignupPage()}>
-          <a className="button small">
-            <strong>Sign Up</strong>
+          <a className="px-20 py-5 font-bold text-white bg-blue-500 rounded hover:bg-blue-700">
+            <center>Sign Up</center>
           </a>
         </Link>
+
         <Link href={Routes.LoginPage()}>
-          <a className="button small">
-            <strong>Login</strong>
+          <a className="px-20 py-5 font-bold text-white bg-red-500 rounded hover:bg-red-700">
+            <center>Login</center>
           </a>
         </Link>
-      </>
+      </a>
     )
   }
 }
 
 const Home: BlitzPage = () => {
   return (
-    <div>
-      <h1>Hello, world!</h1>
+    <div className="bg-green-600">
+      <a className="content-center h-40 text-5xl">
+        <center>Exocortex</center>
+      </a>
+      <a className="content-center h-40 text-2xl">
+        <center>Collect and organize your thoughts</center>
+      </a>
       <Suspense fallback="Loading">
         <UserInfo />
       </Suspense>
