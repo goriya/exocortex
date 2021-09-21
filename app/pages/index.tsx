@@ -36,13 +36,13 @@ const UserInfo = () => {
       <a className="grid justify-items-center bg-white-900">
         <Link href={Routes.SignupPage()}>
           <a className="px-20 py-5 font-bold text-white bg-blue-500 rounded hover:bg-blue-700">
-            <center>Sign Up</center>
+            Sign Up
           </a>
         </Link>
 
         <Link href={Routes.LoginPage()}>
           <a className="px-20 py-5 font-bold text-white bg-red-500 rounded hover:bg-red-700">
-            <center>Login</center>
+            Login
           </a>
         </Link>
       </a>
@@ -52,13 +52,9 @@ const UserInfo = () => {
 
 const Home: BlitzPage = () => {
   return (
-    <div className="bg-green-600">
-      <a className="content-center h-40 text-5xl">
-        <center>Exocortex</center>
-      </a>
-      <a className="content-center h-40 text-2xl">
-        <center>Collect and organize your thoughts</center>
-      </a>
+    <div className="grid bg-gray-100 h-400 justify-items-center">
+      <a className="content-center text-5xl h-15">Exocortex</a>
+      <a className="content-center h-10 text-2xl">Collect and organize your thoughts</a>
       <Suspense fallback="Loading">
         <UserInfo />
       </Suspense>
