@@ -39,6 +39,9 @@ yarn test
 Blitz comes with a test setup using [Jest](https://jestjs.io/) and
 [react-testing-library](https://testing-library.com/).
 
+Note that there must be a PostgreSQL server running in order for the tests to
+succeed.
+
 ## Commands
 
 Blitz comes with a powerful CLI that is designed to make development easy and
