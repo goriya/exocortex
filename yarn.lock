@@ -1488,10 +1488,10 @@
   resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.3.0.tgz#2e8332cc7363f887d32ec5496b207d26ba8052bb"
   integrity sha512-hkc1DATxFLQo4VxPDpMH1gCkPpBbpOoJ/4nhuXw4n63/0R6bCpQECj4+K226UJ4JO/eJQz+1mC2I7JsWanAdQw==
 
-"@types/preview-email@2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@types/preview-email/-/preview-email-2.0.0.tgz#de5d3a132108e8c4a3de3b4f1918b8ed73f546b4"
-  integrity sha512-23VWTBGp8vrvTT4g833CbMRml0HC7azDUY2n2UF4v3ueWVh/DKLUAxlYAaeew3VarJz7PQH4C0H5nCoBBGkUTA==
+"@types/preview-email@2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@types/preview-email/-/preview-email-2.0.1.tgz#df5d1ce7a3034e3dfcd2b38a66c1f60401b27dc8"
+  integrity sha512-wHtm/Xxlxk2WKRok0ya7iUr+UvQFlq9nTIQXZi2d3n2tdrt+n4Fkybvi45BjQILl2wfGFq4y+jARCo2+ZoaTrA==
   dependencies:
     "@types/nodemailer" "*"
 
