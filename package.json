@@ -32,8 +32,8 @@
     "final-form": "4.20.4",
     "node-mailjet": "3.3.4",
     "postcss": "8",
-    "react": "alpha",
-    "react-dom": "alpha",
+    "react": "beta",
+    "react-dom": "beta",
     "react-final-form": "6.5.3",
     "tailwindcss": "2.2.19",
     "zod": "3.11.6"
