@@ -21,7 +21,7 @@ export function forgotPasswordMailer({ to, token }: ResetPasswordMailer) {
 
   return {
     async send() {
-      if (process.env.NODE_ENV === "production") {
+      if (process.env.APP_ENV === "production") {
         sendEmail(msg)
       } else {
         // Preview email in the browser
