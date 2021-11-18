@@ -26,10 +26,14 @@ export const LoginForm = (props: LoginFormProps) => {
           } catch (error) {
             if (error instanceof AuthenticationError) {
               return { [FORM_ERROR]: "Sorry, those credentials are invalid" }
-            } else {
+            } else if (error instanceof Error) {
               return {
                 [FORM_ERROR]:
                   "Sorry, we had an unexpected error. Please try again. - " + error.toString(),
+              }
+            } else {
+              return {
+                [FORM_ERROR]: "Sorry, we had an unexpected error. Please try again.",
               }
             }
           }

@@ -22,7 +22,7 @@ const NewNotePage: BlitzPage = () => {
           try {
             const note = await createNoteMutation(values)
             router.push(Routes.ShowNotePage({ noteId: note.id }))
-          } catch (error) {
+          } catch (error: any) {
             console.error(error)
             return {
               [FORM_ERROR]: error.toString(),
