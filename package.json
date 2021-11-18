@@ -44,7 +44,7 @@
     "eslint": "7.29.0",
     "husky": "6.0.0",
     "lint-staged": "12.0.2",
-    "prettier": "2.3.1",
+    "prettier": "2.4.1",
     "prettier-plugin-prisma": "3.4.1",
     "pretty-quick": "3.1.1",
     "preview-email": "3.0.4",
