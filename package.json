@@ -28,7 +28,7 @@
   "dependencies": {
     "@prisma/client": "3.4.2",
     "autoprefixer": "10",
-    "blitz": "0.42.4",
+    "blitz": "0.43.0",
     "final-form": "4.20.4",
     "node-mailjet": "3.3.4",
     "postcss": "8",
