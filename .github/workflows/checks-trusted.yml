@@ -1,13 +1,17 @@
-name: Checks
+name: Checks (trusted)
 
 on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+  workflow_run:
+    workflows: ["Checks (untrusted)"]
+    types:
+      - completed
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+
+# Workflows triggered by Dependabot don't have access to GitHub secrets, so the checks that need
+# access to the secrets have to be run in a separate workflow.
+# See https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/automating-dependabot-with-github-actions
 
 jobs:
   check:
