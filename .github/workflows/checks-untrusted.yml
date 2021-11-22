@@ -13,3 +13,9 @@ on:
 jobs:
   nothing:
     runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Say Hi
+        run: echo 'Hi there!'
