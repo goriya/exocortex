@@ -26,7 +26,7 @@
     ]
   },
   "dependencies": {
-    "@prisma/client": "3.4.2",
+    "@prisma/client": "3.6.0",
     "autoprefixer": "10",
     "blitz": "0.43.0",
     "final-form": "4.20.4",
