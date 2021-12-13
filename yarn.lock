@@ -1406,6 +1406,11 @@
   dependencies:
     "@prisma/debug" "2.19.0"
 
+"@prisma/prisma-fmt-wasm@3.6.0-24.dc520b92b1ebb2d28dc3161f9f82e875bd35d727":
+  version "3.6.0-24.dc520b92b1ebb2d28dc3161f9f82e875bd35d727"
+  resolved "https://registry.yarnpkg.com/@prisma/prisma-fmt-wasm/-/prisma-fmt-wasm-3.6.0-24.dc520b92b1ebb2d28dc3161f9f82e875bd35d727.tgz#12c18e3c7e14e0030bedf55bfaced4ed3291c2f2"
+  integrity sha512-Nt4A2SZ4MASAliZ9OaXCYG1xr80lEcJABliUAi/tvzCU8r5W3V4Tp5XDqchxuN/w71XY/s+OaWce7PHnoMGpkA==
+
 "@prisma/sdk@2.19.0":
   version "2.19.0"
   resolved "https://registry.yarnpkg.com/@prisma/sdk/-/sdk-2.19.0.tgz#e871a4d34df64931fbdeb71613e6c10c6dc3bcc5"
@@ -8021,10 +8026,12 @@ prelude-ls@~1.1.2:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
   integrity sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
 
-prettier-plugin-prisma@3.5.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-prisma/-/prettier-plugin-prisma-3.5.0.tgz#09cc31f797733dc7973bac9089c978a46bf808e9"
-  integrity sha512-vwmQUv4+c8HDRLSQInDOByUeXa2G9AZ35UGWN73xQkm7fV+TFrHHcTY0dsa70V0QGZX31BLib5ne0cH6GIuZjg==
+prettier-plugin-prisma@3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-prisma/-/prettier-plugin-prisma-3.6.0.tgz#035bf35e79ed1cb0b110bef10e25ac783460081f"
+  integrity sha512-kXr+gNqkP7ryLQXtPb2ot/AJWtidbttysBvHamwlNT6K9wZM2fr2OcTwM6+L9WytIeLIcimtlCAWF1VUelY10w==
+  dependencies:
+    "@prisma/prisma-fmt-wasm" "3.6.0-24.dc520b92b1ebb2d28dc3161f9f82e875bd35d727"
 
 prettier@2.4.1:
   version "2.4.1"
