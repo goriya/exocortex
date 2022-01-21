@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@types/preview-email": "2.0.1",
-    "@types/react": "17.0.37",
+    "@types/react": "17.0.38",
     "babel-plugin-superjson-next": "0.4.2",
     "eslint": "7.29.0",
     "husky": "7.0.4",
