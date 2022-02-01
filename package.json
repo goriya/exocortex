@@ -35,7 +35,7 @@
     "postcss": "8",
     "react": "beta",
     "react-dom": "beta",
-    "react-final-form": "6.5.7",
+    "react-final-form": "6.5.8",
     "tailwindcss": "3.0.18",
     "zod": "3.11.6"
   },
