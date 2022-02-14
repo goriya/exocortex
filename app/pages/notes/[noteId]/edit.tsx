@@ -43,7 +43,7 @@ export const EditNote = () => {
               })
               await setQueryData(updated)
               router.push(Routes.ShowNotePage({ noteId: updated.id }))
-            } catch (error) {
+            } catch (error: any) {
               console.error(error)
               return {
                 [FORM_ERROR]: error.toString(),
