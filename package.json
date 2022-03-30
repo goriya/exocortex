@@ -1,6 +1,9 @@
 {
   "name": "exocortex",
   "version": "0.1.0",
+  "engines": {
+    "node": "16"
+  },
   "scripts": {
     "predev": "blitz prisma migrate dev",
     "dev": "blitz dev",
