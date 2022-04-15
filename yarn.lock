@@ -7535,10 +7535,10 @@ node-libs-browser@^2.2.1:
     util "^0.11.0"
     vm-browserify "^1.0.1"
 
-node-mailjet@3.3.7:
-  version "3.3.7"
-  resolved "https://registry.yarnpkg.com/node-mailjet/-/node-mailjet-3.3.7.tgz#41d4d2ddc99e805a9b68cd1a53ded28878901c29"
-  integrity sha512-kwO0JlQi8MtYEc0DTgL8JeRS1ljjpNqmQ/+attDV3i4YiaCl8SoKs2gBdePWvoFtpCi8uBsfOgU5O9jE/lm2QQ==
+node-mailjet@3.3.10:
+  version "3.3.10"
+  resolved "https://registry.yarnpkg.com/node-mailjet/-/node-mailjet-3.3.10.tgz#2b2f7dff484b697522fc9a4504f877f43ea20946"
+  integrity sha512-FMU9XyM84bBa9JLBJOPlCvOPOtTFhpEREsAvnifR984M6kdfJC2dt4EsMuDQm32khguzGcCYoPtkP0CguBTHSw==
   dependencies:
     bluebird "^3.5.0"
     json-bigint "^1.0.0"
