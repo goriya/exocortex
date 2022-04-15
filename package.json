@@ -34,7 +34,7 @@
     "autoprefixer": "10",
     "blitz": "0.45.4",
     "final-form": "4.20.6",
-    "node-mailjet": "3.3.7",
+    "node-mailjet": "3.3.10",
     "postcss": "8",
     "react": "beta",
     "react-dom": "beta",
