@@ -29,6 +29,11 @@
       "eslint --fix"
     ]
   },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
   "dependencies": {
     "@prisma/client": "3.11.1",
     "autoprefixer": "10",
@@ -43,6 +48,8 @@
     "zod": "3.14.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "16.2.3",
+    "@commitlint/config-conventional": "16.2.1",
     "@types/preview-email": "2.0.1",
     "@types/react": "17.0.43",
     "babel-plugin-superjson-next": "0.4.3",
