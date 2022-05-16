@@ -54,7 +54,7 @@
     "@types/react": "17.0.43",
     "babel-plugin-superjson-next": "0.4.3",
     "eslint": "7.29.0",
-    "husky": "7.0.4",
+    "husky": "8.0.1",
     "lint-staged": "12.4.1",
     "prettier": "2.6.2",
     "prettier-plugin-prisma": "3.14.0",
