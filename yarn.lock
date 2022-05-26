@@ -7823,10 +7823,10 @@ node-libs-browser@^2.2.1:
     util "^0.11.0"
     vm-browserify "^1.0.1"
 
-node-mailjet@3.3.13:
-  version "3.3.13"
-  resolved "https://registry.yarnpkg.com/node-mailjet/-/node-mailjet-3.3.13.tgz#2fc38d76b3c6c1a9296d25102eedecb74346e203"
-  integrity sha512-NnbD/7vbw+VVmcWnM6AFEx+xoZmEXpT9Q20yy/WPgGjeV+IMQ/3/Op55ZpOowU/tbir/yIZ0qTVU3H0/KN4X/g==
+node-mailjet@3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/node-mailjet/-/node-mailjet-3.4.1.tgz#d8b31a58dfc78e980d9b5de0f757eebbeab0a8b4"
+  integrity sha512-m+msgBJYgwFbIZBIPOnsGOtBt9xP03UqmkmuEcgTcLlr/U1GUJQrVI7cDFRgujybb9Cl1wl4thIGyM3wt6X+zQ==
   dependencies:
     json-bigint "^1.0.0"
     qs "^6.5.0"
