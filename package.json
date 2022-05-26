@@ -45,11 +45,11 @@
     "react-dom": "beta",
     "react-final-form": "6.5.9",
     "tailwindcss": "3.0.24",
-    "zod": "3.14.4"
+    "zod": "3.17.3"
   },
   "devDependencies": {
     "@commitlint/cli": "16.2.3",
-    "@commitlint/config-conventional": "16.2.1",
+    "@commitlint/config-conventional": "17.0.0",
     "@types/preview-email": "2.0.1",
     "@types/react": "17.0.43",
     "babel-plugin-superjson-next": "0.4.3",
