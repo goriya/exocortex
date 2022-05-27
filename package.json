@@ -38,7 +38,7 @@
     "@prisma/client": "3.14.0",
     "autoprefixer": "10",
     "blitz": "0.45.4",
-    "final-form": "4.20.6",
+    "final-form": "4.20.7",
     "node-mailjet": "3.4.1",
     "postcss": "8",
     "react": "beta",
