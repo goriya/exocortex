@@ -52,7 +52,7 @@ const UserInfo = () => {
 const Home: BlitzPage = () => {
   return (
     <div>
-      <h1>Hello, world!</h1>
+      <h1>Exocortex</h1>
       <Suspense fallback="Loading">
         <UserInfo />
       </Suspense>
