@@ -1,7 +1,7 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
-    "types": ["cypress", "@types/testing-library__cypress"],
+    "types": ["cypress"],
     "isolatedModules": false,
     "tsBuildInfoFile": ".tsbuildinfo.test"
   },
